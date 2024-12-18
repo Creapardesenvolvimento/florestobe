@@ -1,14 +1,5 @@
 # Use a imagem base do Flutter com Dart SDK atualizado
-FROM dart:stable
-
-# Instale o Flutter
-RUN apt-get update && apt-get install -y \
-    git \
-    && git clone https://github.com/flutter/flutter.git /flutter \
-    && /flutter/bin/flutter doctor
-
-# Adicione o Flutter ao PATH
-ENV PATH="/flutter/bin:${PATH}"
+FROM cirrusci/flutter:3.0.0
 
 # Defina o diretório de trabalho
 WORKDIR /app
