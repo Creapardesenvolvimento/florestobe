@@ -1,5 +1,5 @@
 # Use a imagem base do Flutter com Dart SDK atualizado
-FROM cirrusci/flutter:3.0.0
+FROM cirrusci/flutter:stable
 
 # Defina o diretório de trabalho
 WORKDIR /app
