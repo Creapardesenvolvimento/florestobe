@@ -2,9 +2,12 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'home_page_model.dart';
 export 'home_page_model.dart';
 
@@ -52,7 +55,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: SizedBox(
+          child: Container(
             width: MediaQuery.sizeOf(context).width * 1.0,
             height: MediaQuery.sizeOf(context).height * 1.0,
             child: Stack(
@@ -64,7 +67,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   Container(
                     width: MediaQuery.sizeOf(context).width * 1.0,
                     height: MediaQuery.sizeOf(context).height * 1.0,
-                    decoration: const BoxDecoration(),
+                    decoration: BoxDecoration(),
                     child: SingleChildScrollView(
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
@@ -79,7 +82,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     width:
                                         MediaQuery.sizeOf(context).width * 0.5,
                                     height: 700.0,
-                                    decoration: const BoxDecoration(),
+                                    decoration: BoxDecoration(),
                                     child: Stack(
                                       children: [
                                         Opacity(
@@ -97,10 +100,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              const AlignmentDirectional(0.0, 0.0),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     180.0, 0.0, 180.0, 0.0),
                                             child: Text(
                                               'Cada noiva merece um buquê exclusivo, criado com o design floral e o amor que traduzem a sofisticação e a emoção desse dia único',
@@ -112,7 +115,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                         fontFamily:
                                                             'Playfair Display SC',
                                                         color:
-                                                            const Color(0xFF5C4209),
+                                                            Color(0xFF5C4209),
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -125,7 +128,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     width:
                                         MediaQuery.sizeOf(context).width * 0.5,
                                     height: 700.0,
-                                    decoration: const BoxDecoration(),
+                                    decoration: BoxDecoration(),
                                     child: Stack(
                                       children: [
                                         Opacity(
@@ -143,10 +146,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              const AlignmentDirectional(0.0, 0.0),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     180.0, 0.0, 180.0, 0.0),
                                             child: Text(
                                               'e, para eternizar essa lembrança, transformamos seu buquê em uma peça viva que preserva sua história para sempre',
@@ -158,7 +161,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                         fontFamily:
                                                             'Playfair Display SC',
                                                         color:
-                                                            const Color(0xFF5C4209),
+                                                            Color(0xFF5C4209),
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -172,9 +175,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               Container(
                                 width: MediaQuery.sizeOf(context).width * 1.0,
                                 height: 100.0,
-                                decoration: const BoxDecoration(),
+                                decoration: BoxDecoration(),
                                 child: Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       24.0, 0.0, 24.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -197,19 +200,19 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               'https://api.whatsapp.com/send?phone=5511978298421');
                                         },
                                         text: 'Atendimento Noiva',
-                                        icon: const FaIcon(
+                                        icon: FaIcon(
                                           FontAwesomeIcons.whatsapp,
                                           size: 20.0,
                                         ),
                                         options: FFButtonOptions(
                                           height: 46.0,
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           iconPadding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
-                                          color: const Color(0xFFA9918F),
+                                          color: Color(0xFFA9918F),
                                           textStyle:
                                               FlutterFlowTheme.of(context)
                                                   .titleSmall
@@ -244,7 +247,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 color: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
                               ),
-                              child: SizedBox(
+                              child: Container(
                                 width: double.infinity,
                                 height: 600.0,
                                 child: Stack(
@@ -262,10 +265,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       ),
                                     ),
                                     Align(
-                                      alignment: const AlignmentDirectional(0.0, 0.0),
+                                      alignment: AlignmentDirectional(0.0, 0.0),
                                       child: Container(
                                         width: 500.0,
-                                        decoration: const BoxDecoration(),
+                                        decoration: BoxDecoration(),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.min,
                                           mainAxisAlignment:
@@ -280,7 +283,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   .override(
                                                     fontFamily:
                                                         'Playfair Display SC',
-                                                    color: const Color(0xFF5C4209),
+                                                    color: Color(0xFF5C4209),
                                                     fontSize: 47.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -293,21 +296,21 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               },
                                               text:
                                                   'Quero meu Buque Exclusivo !',
-                                              icon: const FaIcon(
+                                              icon: FaIcon(
                                                 FontAwesomeIcons.whatsapp,
                                                 color: Colors.black,
                                                 size: 20.0,
                                               ),
                                               options: FFButtonOptions(
                                                 height: 46.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
-                                                color: const Color(0xFFA9918F),
+                                                color: Color(0xFFA9918F),
                                                 textStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .titleSmall
@@ -325,7 +328,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     BorderRadius.circular(8.0),
                                               ),
                                             ),
-                                          ].divide(const SizedBox(height: 16.0)),
+                                          ].divide(SizedBox(height: 16.0)),
                                         ),
                                       ),
                                     ),
@@ -343,7 +346,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 color: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
                               ),
-                              child: SizedBox(
+                              child: Container(
                                 width: double.infinity,
                                 height: 262.0,
                                 child: Stack(
@@ -361,17 +364,17 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       ),
                                     ),
                                     Align(
-                                      alignment: const AlignmentDirectional(0.0, 0.0),
+                                      alignment: AlignmentDirectional(0.0, 0.0),
                                       child: Container(
                                         width: 500.0,
-                                        decoration: const BoxDecoration(),
+                                        decoration: BoxDecoration(),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.min,
                                           mainAxisAlignment:
                                               MainAxisAlignment.center,
                                           children: [
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       20.0, 0.0, 20.0, 0.0),
                                               child: Text(
@@ -384,7 +387,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           fontFamily:
                                                               'Playfair Display SC',
                                                           color:
-                                                              const Color(0xFF5C4209),
+                                                              Color(0xFF5C4209),
                                                           fontSize: 25.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -399,21 +402,21 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               },
                                               text:
                                                   'Quero meu Buque Exclusivo !',
-                                              icon: const FaIcon(
+                                              icon: FaIcon(
                                                 FontAwesomeIcons.whatsapp,
                                                 color: Colors.black,
                                                 size: 20.0,
                                               ),
                                               options: FFButtonOptions(
                                                 height: 46.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
-                                                color: const Color(0xFFA9918F),
+                                                color: Color(0xFFA9918F),
                                                 textStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .titleSmall
@@ -431,7 +434,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     BorderRadius.circular(8.0),
                                               ),
                                             ),
-                                          ].divide(const SizedBox(height: 16.0)),
+                                          ].divide(SizedBox(height: 16.0)),
                                         ),
                                       ),
                                     ),
@@ -442,13 +445,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           Container(
                             width: double.infinity,
                             height: 197.0,
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               color: Color(0xFFC9CACB),
                             ),
                             child: Align(
-                              alignment: const AlignmentDirectional(0.0, 0.0),
+                              alignment: AlignmentDirectional(0.0, 0.0),
                               child: Padding(
-                                padding: const EdgeInsets.all(10.0),
+                                padding: EdgeInsets.all(10.0),
                                 child: Text(
                                   'Na FlorestoBe, cada buquê é criado para refletir a essência e o estilo único de cada noiva.\nSelecionamos cuidadosamente as flores para harmonizar com a sua história de amor, compondo buquês que representam suas emoções e o sonho desse dia tão especial.',
                                   textAlign: TextAlign.center,
@@ -467,7 +470,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           ),
                           Container(
                             width: double.infinity,
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               gradient: LinearGradient(
                                 colors: [Color(0x00FFFFFF), Color(0xFFDCD1DF)],
                                 stops: [0.0, 1.0],
@@ -478,7 +481,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             child: Stack(
                               children: [
                                 Align(
-                                  alignment: const AlignmentDirectional(0.0, -1.0),
+                                  alignment: AlignmentDirectional(0.0, -1.0),
                                   child: Text(
                                     'Noivas',
                                     style: FlutterFlowTheme.of(context)
@@ -494,7 +497,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       40.0, 50.0, 40.0, 40.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -525,7 +528,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryText,
-                                                      offset: const Offset(2.0, 2.0),
+                                                      offset: Offset(2.0, 2.0),
                                                       blurRadius: 2.0,
                                                     )
                                                   ],
@@ -550,7 +553,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryText,
-                                                      offset: const Offset(2.0, 2.0),
+                                                      offset: Offset(2.0, 2.0),
                                                       blurRadius: 2.0,
                                                     )
                                                   ],
@@ -574,7 +577,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryText,
-                                                      offset: const Offset(2.0, 2.0),
+                                                      offset: Offset(2.0, 2.0),
                                                       blurRadius: 2.0,
                                                     )
                                                   ],
@@ -594,21 +597,21 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
-                                        ].divide(const SizedBox(height: 16.0)),
+                                        ].divide(SizedBox(height: 16.0)),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 70.0, 0.0, 0.0),
                                         child: Container(
                                           width: double.infinity,
-                                          decoration: const BoxDecoration(),
+                                          decoration: BoxDecoration(),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               GridView(
                                                 padding: EdgeInsets.zero,
                                                 gridDelegate:
-                                                    const SliverGridDelegateWithFixedCrossAxisCount(
+                                                    SliverGridDelegateWithFixedCrossAxisCount(
                                                   crossAxisCount: 3,
                                                   crossAxisSpacing: 10.0,
                                                   mainAxisSpacing: 0.0,
@@ -752,7 +755,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                 ],
                                               ),
                                               Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 8.0, 0.0, 0.0),
                                                 child: Container(
@@ -762,7 +765,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
-                                                    boxShadow: const [
+                                                    boxShadow: [
                                                       BoxShadow(
                                                         blurRadius: 15.0,
                                                         color:
@@ -795,7 +798,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                       ),
                                                       Align(
                                                         alignment:
-                                                            const AlignmentDirectional(
+                                                            AlignmentDirectional(
                                                                 0.0, 0.0),
                                                         child: Column(
                                                           mainAxisSize:
@@ -806,7 +809,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           children: [
                                                             Padding(
                                                               padding:
-                                                                  const EdgeInsetsDirectional
+                                                                  EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           50.0,
                                                                           0.0,
@@ -838,7 +841,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                               },
                                                               text:
                                                                   'Quero Realizar meu Sonho !',
-                                                              icon: const FaIcon(
+                                                              icon: FaIcon(
                                                                 FontAwesomeIcons
                                                                     .whatsapp,
                                                                 color: Colors
@@ -848,20 +851,20 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                               options:
                                                                   FFButtonOptions(
                                                                 height: 46.0,
-                                                                padding: const EdgeInsetsDirectional
+                                                                padding: EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         0.0,
                                                                         16.0,
                                                                         0.0),
                                                                 iconPadding:
-                                                                    const EdgeInsetsDirectional
+                                                                    EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
                                                                             0.0),
-                                                                color: const Color(
+                                                                color: Color(
                                                                     0xFFA9918F),
                                                                 textStyle: FlutterFlowTheme.of(
                                                                         context)
@@ -886,7 +889,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                             8.0),
                                                               ),
                                                             ),
-                                                          ].divide(const SizedBox(
+                                                          ].divide(SizedBox(
                                                               height: 16.0)),
                                                         ),
                                                       ),
@@ -911,7 +914,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   .secondaryBackground,
                             ),
                             child: Padding(
-                              padding: const EdgeInsets.all(24.0),
+                              padding: EdgeInsets.all(24.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -937,7 +940,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               'https://api.whatsapp.com/send?phone=5511978298421');
                                         },
                                         text: 'Quero meu Buque Eternizado',
-                                        icon: const FaIcon(
+                                        icon: FaIcon(
                                           FontAwesomeIcons.whatsapp,
                                           color: Colors.black,
                                           size: 20.0,
@@ -945,12 +948,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         options: FFButtonOptions(
                                           height: 46.0,
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           iconPadding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
-                                          color: const Color(0xFFA9918F),
+                                          color: Color(0xFFA9918F),
                                           textStyle:
                                               FlutterFlowTheme.of(context)
                                                   .titleSmall
@@ -967,7 +970,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                       ),
-                                    ].divide(const SizedBox(height: 16.0)),
+                                    ].divide(SizedBox(height: 16.0)),
                                   ),
                                   ClipRRect(
                                     borderRadius: BorderRadius.circular(24.0),
@@ -978,20 +981,20 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       fit: BoxFit.cover,
                                     ),
                                   ),
-                                ].divide(const SizedBox(width: 24.0)),
+                                ].divide(SizedBox(width: 24.0)),
                               ),
                             ),
                           ),
                           Container(
                             width: double.infinity,
                             height: 200.0,
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               color: Color(0xFFC9D1DD),
                             ),
                             child: Align(
-                              alignment: const AlignmentDirectional(0.0, 0.0),
+                              alignment: AlignmentDirectional(0.0, 0.0),
                               child: Padding(
-                                padding: const EdgeInsets.all(16.0),
+                                padding: EdgeInsets.all(16.0),
                                 child: Text(
                                   'Na FlorestoBe, seu buquê se torna uma peça de arte atemporal. Preservamos cada flor com carinho para que a beleza e os detalhes do seu grande dia estejam sempre presentes, em uma criação que eterniza sua história de amor.',
                                   textAlign: TextAlign.center,
@@ -1011,7 +1014,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           ),
                           Container(
                             width: double.infinity,
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               gradient: LinearGradient(
                                 colors: [Color(0x00FFFFFF), Color(0xFFDCD1DF)],
                                 stops: [0.0, 1.0],
@@ -1022,7 +1025,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             child: Stack(
                               children: [
                                 Align(
-                                  alignment: const AlignmentDirectional(0.0, -1.0),
+                                  alignment: AlignmentDirectional(0.0, -1.0),
                                   child: Text(
                                     'Eternizados',
                                     style: FlutterFlowTheme.of(context)
@@ -1038,7 +1041,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       40.0, 50.0, 40.0, 40.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -1069,7 +1072,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryText,
-                                                      offset: const Offset(2.0, 2.0),
+                                                      offset: Offset(2.0, 2.0),
                                                       blurRadius: 2.0,
                                                     )
                                                   ],
@@ -1094,7 +1097,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryText,
-                                                      offset: const Offset(2.0, 2.0),
+                                                      offset: Offset(2.0, 2.0),
                                                       blurRadius: 2.0,
                                                     )
                                                   ],
@@ -1114,14 +1117,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
-                                        ].divide(const SizedBox(height: 16.0)),
+                                        ].divide(SizedBox(height: 16.0)),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 70.0, 0.0, 0.0),
                                         child: Container(
                                           width: double.infinity,
-                                          decoration: const BoxDecoration(),
+                                          decoration: BoxDecoration(),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
@@ -1182,7 +1185,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                       ),
                                                     ),
                                                   ),
-                                                ].divide(const SizedBox(width: 6.0)),
+                                                ].divide(SizedBox(width: 6.0)),
                                               ),
                                               Row(
                                                 mainAxisSize: MainAxisSize.max,
@@ -1229,7 +1232,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                       ),
                                                     ),
                                                   ),
-                                                ].divide(const SizedBox(width: 6.0)),
+                                                ].divide(SizedBox(width: 6.0)),
                                               ),
                                               Row(
                                                 mainAxisSize: MainAxisSize.max,
@@ -1289,7 +1292,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                       ),
                                                     ),
                                                   ),
-                                                ].divide(const SizedBox(width: 6.0)),
+                                                ].divide(SizedBox(width: 6.0)),
                                               ),
                                             ],
                                           ),
@@ -1297,12 +1300,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       ),
                                       Container(
                                         width: double.infinity,
-                                        decoration: const BoxDecoration(),
+                                        decoration: BoxDecoration(),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 8.0, 0.0, 0.0),
                                               child: Container(
                                                 width: double.infinity,
@@ -1311,7 +1314,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryBackground,
-                                                  boxShadow: const [
+                                                  boxShadow: [
                                                     BoxShadow(
                                                       blurRadius: 15.0,
                                                       color: Color(0x33000000),
@@ -1342,7 +1345,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     ),
                                                     Align(
                                                       alignment:
-                                                          const AlignmentDirectional(
+                                                          AlignmentDirectional(
                                                               0.0, 0.0),
                                                       child: Column(
                                                         mainAxisSize:
@@ -1353,7 +1356,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                const EdgeInsetsDirectional
+                                                                EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         100.0,
                                                                         0.0,
@@ -1385,7 +1388,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                             },
                                                             text:
                                                                 'Quero meu Buque Eternizado',
-                                                            icon: const FaIcon(
+                                                            icon: FaIcon(
                                                               FontAwesomeIcons
                                                                   .whatsapp,
                                                               color:
@@ -1396,20 +1399,20 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 FFButtonOptions(
                                                               height: 46.0,
                                                               padding:
-                                                                  const EdgeInsetsDirectional
+                                                                  EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           0.0,
                                                                           16.0,
                                                                           0.0),
                                                               iconPadding:
-                                                                  const EdgeInsetsDirectional
+                                                                  EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
                                                                           0.0),
-                                                              color: const Color(
+                                                              color: Color(
                                                                   0xFFA9918F),
                                                               textStyle:
                                                                   FlutterFlowTheme.of(
@@ -1434,7 +1437,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                           8.0),
                                                             ),
                                                           ),
-                                                        ].divide(const SizedBox(
+                                                        ].divide(SizedBox(
                                                             height: 16.0)),
                                                       ),
                                                     ),
@@ -1453,11 +1456,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           ),
                           Container(
                             width: double.infinity,
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               color: Colors.black,
                             ),
                             child: Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   50.0, 30.0, 90.0, 30.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -1524,10 +1527,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                             FontWeight.w500,
                                                       ),
                                             ),
-                                          ].divide(const SizedBox(width: 8.0)),
+                                          ].divide(SizedBox(width: 8.0)),
                                         ),
                                       ),
-                                    ].divide(const SizedBox(width: 16.0)),
+                                    ].divide(SizedBox(width: 16.0)),
                                   ),
                                 ],
                               ),
@@ -1546,7 +1549,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   Container(
                     width: MediaQuery.sizeOf(context).width * 1.0,
                     height: MediaQuery.sizeOf(context).height * 1.0,
-                    decoration: const BoxDecoration(),
+                    decoration: BoxDecoration(),
                     child: SingleChildScrollView(
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
@@ -1561,7 +1564,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     width:
                                         MediaQuery.sizeOf(context).width * 0.5,
                                     height: 700.0,
-                                    decoration: const BoxDecoration(),
+                                    decoration: BoxDecoration(),
                                     child: Stack(
                                       children: [
                                         Opacity(
@@ -1579,10 +1582,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              const AlignmentDirectional(0.0, 0.0),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     20.0, 0.0, 20.0, 0.0),
                                             child: Text(
                                               'Cada noiva merece um buquê exclusivo, criado com o design floral e o amor que traduzem a sofisticação e a emoção desse dia único',
@@ -1594,7 +1597,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                         fontFamily:
                                                             'Playfair Display SC',
                                                         color:
-                                                            const Color(0xFF5C4209),
+                                                            Color(0xFF5C4209),
                                                         fontSize: 20.0,
                                                         letterSpacing: 0.0,
                                                       ),
@@ -1608,7 +1611,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     width:
                                         MediaQuery.sizeOf(context).width * 0.5,
                                     height: 700.0,
-                                    decoration: const BoxDecoration(),
+                                    decoration: BoxDecoration(),
                                     child: Stack(
                                       children: [
                                         Opacity(
@@ -1626,10 +1629,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              const AlignmentDirectional(0.0, 0.0),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     20.0, 0.0, 20.0, 0.0),
                                             child: Text(
                                               'e, para eternizar essa lembrança, transformamos seu buquê em uma peça viva que preserva sua história para sempre',
@@ -1641,7 +1644,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                         fontFamily:
                                                             'Playfair Display SC',
                                                         color:
-                                                            const Color(0xFF5C4209),
+                                                            Color(0xFF5C4209),
                                                         fontSize: 20.0,
                                                         letterSpacing: 0.0,
                                                       ),
@@ -1656,9 +1659,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               Container(
                                 width: MediaQuery.sizeOf(context).width * 1.0,
                                 height: 100.0,
-                                decoration: const BoxDecoration(),
+                                decoration: BoxDecoration(),
                                 child: Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       24.0, 0.0, 24.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -1676,8 +1679,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       FlutterFlowIconButton(
                                         borderRadius: 8.0,
                                         buttonSize: 40.0,
-                                        fillColor: const Color(0xFFA9918F),
-                                        icon: const FaIcon(
+                                        fillColor: Color(0xFFA9918F),
+                                        icon: FaIcon(
                                           FontAwesomeIcons.whatsapp,
                                           color: Colors.black,
                                           size: 20.0,
@@ -1705,7 +1708,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 color: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
                               ),
-                              child: SizedBox(
+                              child: Container(
                                 width: double.infinity,
                                 height: 600.0,
                                 child: Stack(
@@ -1723,10 +1726,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       ),
                                     ),
                                     Align(
-                                      alignment: const AlignmentDirectional(0.0, 0.0),
+                                      alignment: AlignmentDirectional(0.0, 0.0),
                                       child: Container(
                                         width: 500.0,
-                                        decoration: const BoxDecoration(),
+                                        decoration: BoxDecoration(),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.min,
                                           mainAxisAlignment:
@@ -1741,7 +1744,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   .override(
                                                     fontFamily:
                                                         'Playfair Display SC',
-                                                    color: const Color(0xFF5C4209),
+                                                    color: Color(0xFF5C4209),
                                                     fontSize: 47.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -1754,21 +1757,21 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               },
                                               text:
                                                   'Quero meu Buque Exclusivo !',
-                                              icon: const FaIcon(
+                                              icon: FaIcon(
                                                 FontAwesomeIcons.whatsapp,
                                                 color: Colors.black,
                                                 size: 20.0,
                                               ),
                                               options: FFButtonOptions(
                                                 height: 46.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
-                                                color: const Color(0xFFA9918F),
+                                                color: Color(0xFFA9918F),
                                                 textStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .titleSmall
@@ -1786,7 +1789,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     BorderRadius.circular(8.0),
                                               ),
                                             ),
-                                          ].divide(const SizedBox(height: 16.0)),
+                                          ].divide(SizedBox(height: 16.0)),
                                         ),
                                       ),
                                     ),
@@ -1804,7 +1807,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 color: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
                               ),
-                              child: SizedBox(
+                              child: Container(
                                 width: double.infinity,
                                 height: 262.0,
                                 child: Stack(
@@ -1822,17 +1825,17 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       ),
                                     ),
                                     Align(
-                                      alignment: const AlignmentDirectional(0.0, 0.0),
+                                      alignment: AlignmentDirectional(0.0, 0.0),
                                       child: Container(
                                         width: 500.0,
-                                        decoration: const BoxDecoration(),
+                                        decoration: BoxDecoration(),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.min,
                                           mainAxisAlignment:
                                               MainAxisAlignment.center,
                                           children: [
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       20.0, 0.0, 20.0, 0.0),
                                               child: Text(
@@ -1845,7 +1848,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           fontFamily:
                                                               'Playfair Display SC',
                                                           color:
-                                                              const Color(0xFF5C4209),
+                                                              Color(0xFF5C4209),
                                                           fontSize: 25.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -1860,21 +1863,21 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               },
                                               text:
                                                   'Quero meu Buque Exclusivo !',
-                                              icon: const FaIcon(
+                                              icon: FaIcon(
                                                 FontAwesomeIcons.whatsapp,
                                                 color: Colors.black,
                                                 size: 20.0,
                                               ),
                                               options: FFButtonOptions(
                                                 height: 46.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
-                                                color: const Color(0xFFA9918F),
+                                                color: Color(0xFFA9918F),
                                                 textStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .titleSmall
@@ -1892,7 +1895,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     BorderRadius.circular(8.0),
                                               ),
                                             ),
-                                          ].divide(const SizedBox(height: 16.0)),
+                                          ].divide(SizedBox(height: 16.0)),
                                         ),
                                       ),
                                     ),
@@ -1903,13 +1906,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           Container(
                             width: double.infinity,
                             height: 197.0,
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               color: Color(0xFFC9CACB),
                             ),
                             child: Align(
-                              alignment: const AlignmentDirectional(0.0, 0.0),
+                              alignment: AlignmentDirectional(0.0, 0.0),
                               child: Padding(
-                                padding: const EdgeInsets.all(10.0),
+                                padding: EdgeInsets.all(10.0),
                                 child: Text(
                                   'Na FlorestoBe, cada buquê é criado para refletir a essência e o estilo único de cada noiva.\nSelecionamos cuidadosamente as flores para harmonizar com a sua história de amor, compondo buquês que representam suas emoções e o sonho desse dia tão especial.',
                                   textAlign: TextAlign.center,
@@ -1928,7 +1931,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           ),
                           Container(
                             width: double.infinity,
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               gradient: LinearGradient(
                                 colors: [Color(0x00FFFFFF), Color(0xFFDCD1DF)],
                                 stops: [0.0, 1.0],
@@ -1939,7 +1942,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             child: Stack(
                               children: [
                                 Align(
-                                  alignment: const AlignmentDirectional(0.0, -1.0),
+                                  alignment: AlignmentDirectional(0.0, -1.0),
                                   child: Text(
                                     'Noivas',
                                     style: FlutterFlowTheme.of(context)
@@ -1955,7 +1958,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       40.0, 50.0, 40.0, 40.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -1990,7 +1993,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                   .of(context)
                                                               .secondaryText,
                                                           offset:
-                                                              const Offset(2.0, 2.0),
+                                                              Offset(2.0, 2.0),
                                                           blurRadius: 2.0,
                                                         )
                                                       ],
@@ -2017,7 +2020,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                   .of(context)
                                                               .secondaryText,
                                                           offset:
-                                                              const Offset(2.0, 2.0),
+                                                              Offset(2.0, 2.0),
                                                           blurRadius: 2.0,
                                                         )
                                                       ],
@@ -2043,7 +2046,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryText,
-                                                      offset: const Offset(2.0, 2.0),
+                                                      offset: Offset(2.0, 2.0),
                                                       blurRadius: 2.0,
                                                     )
                                                   ],
@@ -2063,21 +2066,21 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
-                                        ].divide(const SizedBox(height: 16.0)),
+                                        ].divide(SizedBox(height: 16.0)),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 70.0, 0.0, 0.0),
                                         child: Container(
                                           width: double.infinity,
-                                          decoration: const BoxDecoration(),
+                                          decoration: BoxDecoration(),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               GridView(
                                                 padding: EdgeInsets.zero,
                                                 gridDelegate:
-                                                    const SliverGridDelegateWithFixedCrossAxisCount(
+                                                    SliverGridDelegateWithFixedCrossAxisCount(
                                                   crossAxisCount: 3,
                                                   crossAxisSpacing: 10.0,
                                                   mainAxisSpacing: 0.0,
@@ -2221,7 +2224,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                 ],
                                               ),
                                               Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 8.0, 0.0, 0.0),
                                                 child: Container(
@@ -2231,7 +2234,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
-                                                    boxShadow: const [
+                                                    boxShadow: [
                                                       BoxShadow(
                                                         blurRadius: 15.0,
                                                         color:
@@ -2264,7 +2267,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                       ),
                                                       Align(
                                                         alignment:
-                                                            const AlignmentDirectional(
+                                                            AlignmentDirectional(
                                                                 0.0, 0.0),
                                                         child: Column(
                                                           mainAxisSize:
@@ -2275,7 +2278,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           children: [
                                                             Padding(
                                                               padding:
-                                                                  const EdgeInsetsDirectional
+                                                                  EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           50.0,
                                                                           0.0,
@@ -2307,7 +2310,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                               },
                                                               text:
                                                                   'Quero Realizar meu Sonho !',
-                                                              icon: const FaIcon(
+                                                              icon: FaIcon(
                                                                 FontAwesomeIcons
                                                                     .whatsapp,
                                                                 color: Colors
@@ -2317,20 +2320,20 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                               options:
                                                                   FFButtonOptions(
                                                                 height: 46.0,
-                                                                padding: const EdgeInsetsDirectional
+                                                                padding: EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         0.0,
                                                                         16.0,
                                                                         0.0),
                                                                 iconPadding:
-                                                                    const EdgeInsetsDirectional
+                                                                    EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
                                                                             0.0),
-                                                                color: const Color(
+                                                                color: Color(
                                                                     0xFFA9918F),
                                                                 textStyle: FlutterFlowTheme.of(
                                                                         context)
@@ -2355,7 +2358,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                             8.0),
                                                               ),
                                                             ),
-                                                          ].divide(const SizedBox(
+                                                          ].divide(SizedBox(
                                                               height: 16.0)),
                                                         ),
                                                       ),
@@ -2375,7 +2378,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           ),
                           Container(
                             width: double.infinity,
-                            constraints: const BoxConstraints(
+                            constraints: BoxConstraints(
                               maxHeight: 300.0,
                             ),
                             decoration: BoxDecoration(
@@ -2397,7 +2400,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.all(24.0),
+                                  padding: EdgeInsets.all(24.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment: MainAxisAlignment.center,
@@ -2424,19 +2427,19 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   'https://api.whatsapp.com/send?phone=5511978298421');
                                             },
                                             text: 'Quero meu Buque Eternizado',
-                                            icon: const FaIcon(
+                                            icon: FaIcon(
                                               FontAwesomeIcons.whatsapp,
                                               color: Colors.black,
                                               size: 20.0,
                                             ),
                                             options: FFButtonOptions(
                                               height: 46.0,
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
-                                              iconPadding: const EdgeInsetsDirectional
+                                              iconPadding: EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                              color: const Color(0xFFA9918F),
+                                              color: Color(0xFFA9918F),
                                               textStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .titleSmall
@@ -2454,9 +2457,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   BorderRadius.circular(8.0),
                                             ),
                                           ),
-                                        ].divide(const SizedBox(height: 16.0)),
+                                        ].divide(SizedBox(height: 16.0)),
                                       ),
-                                    ].divide(const SizedBox(width: 24.0)),
+                                    ].divide(SizedBox(width: 24.0)),
                                   ),
                                 ),
                               ],
@@ -2464,13 +2467,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           ),
                           Container(
                             width: double.infinity,
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               color: Color(0xFFC9D1DD),
                             ),
                             child: Align(
-                              alignment: const AlignmentDirectional(0.0, 0.0),
+                              alignment: AlignmentDirectional(0.0, 0.0),
                               child: Padding(
-                                padding: const EdgeInsets.all(16.0),
+                                padding: EdgeInsets.all(16.0),
                                 child: Text(
                                   'Na FlorestoBe, seu buquê se torna uma peça de arte atemporal. Preservamos cada flor com carinho para que a beleza e os detalhes do seu grande dia estejam sempre presentes, em uma criação que eterniza sua história de amor.',
                                   textAlign: TextAlign.center,
@@ -2490,7 +2493,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           ),
                           Container(
                             width: double.infinity,
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               gradient: LinearGradient(
                                 colors: [Color(0x00FFFFFF), Color(0xFFDCD1DF)],
                                 stops: [0.0, 1.0],
@@ -2501,7 +2504,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             child: Stack(
                               children: [
                                 Align(
-                                  alignment: const AlignmentDirectional(0.0, -1.0),
+                                  alignment: AlignmentDirectional(0.0, -1.0),
                                   child: Text(
                                     'Eternizados',
                                     style: FlutterFlowTheme.of(context)
@@ -2517,7 +2520,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       40.0, 50.0, 40.0, 40.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -2552,7 +2555,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                   .of(context)
                                                               .secondaryText,
                                                           offset:
-                                                              const Offset(2.0, 2.0),
+                                                              Offset(2.0, 2.0),
                                                           blurRadius: 2.0,
                                                         )
                                                       ],
@@ -2579,7 +2582,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryText,
-                                                      offset: const Offset(2.0, 2.0),
+                                                      offset: Offset(2.0, 2.0),
                                                       blurRadius: 2.0,
                                                     )
                                                   ],
@@ -2599,14 +2602,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
-                                        ].divide(const SizedBox(height: 16.0)),
+                                        ].divide(SizedBox(height: 16.0)),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 70.0, 0.0, 0.0),
                                         child: Container(
                                           width: double.infinity,
-                                          decoration: const BoxDecoration(),
+                                          decoration: BoxDecoration(),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
@@ -2667,7 +2670,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                       ),
                                                     ),
                                                   ),
-                                                ].divide(const SizedBox(width: 6.0)),
+                                                ].divide(SizedBox(width: 6.0)),
                                               ),
                                               Row(
                                                 mainAxisSize: MainAxisSize.max,
@@ -2714,7 +2717,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                       ),
                                                     ),
                                                   ),
-                                                ].divide(const SizedBox(width: 6.0)),
+                                                ].divide(SizedBox(width: 6.0)),
                                               ),
                                               Row(
                                                 mainAxisSize: MainAxisSize.max,
@@ -2774,7 +2777,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                       ),
                                                     ),
                                                   ),
-                                                ].divide(const SizedBox(width: 6.0)),
+                                                ].divide(SizedBox(width: 6.0)),
                                               ),
                                             ],
                                           ),
@@ -2782,12 +2785,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       ),
                                       Container(
                                         width: double.infinity,
-                                        decoration: const BoxDecoration(),
+                                        decoration: BoxDecoration(),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 8.0, 0.0, 0.0),
                                               child: Container(
                                                 width: double.infinity,
@@ -2796,7 +2799,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryBackground,
-                                                  boxShadow: const [
+                                                  boxShadow: [
                                                     BoxShadow(
                                                       blurRadius: 15.0,
                                                       color: Color(0x33000000),
@@ -2827,7 +2830,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     ),
                                                     Align(
                                                       alignment:
-                                                          const AlignmentDirectional(
+                                                          AlignmentDirectional(
                                                               0.0, 0.0),
                                                       child: Column(
                                                         mainAxisSize:
@@ -2838,7 +2841,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                const EdgeInsetsDirectional
+                                                                EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         50.0,
                                                                         0.0,
@@ -2870,7 +2873,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                             },
                                                             text:
                                                                 'Quero meu Buque Eternizado',
-                                                            icon: const FaIcon(
+                                                            icon: FaIcon(
                                                               FontAwesomeIcons
                                                                   .whatsapp,
                                                               color:
@@ -2881,20 +2884,20 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 FFButtonOptions(
                                                               height: 46.0,
                                                               padding:
-                                                                  const EdgeInsetsDirectional
+                                                                  EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           0.0,
                                                                           16.0,
                                                                           0.0),
                                                               iconPadding:
-                                                                  const EdgeInsetsDirectional
+                                                                  EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
                                                                           0.0),
-                                                              color: const Color(
+                                                              color: Color(
                                                                   0xFFA9918F),
                                                               textStyle:
                                                                   FlutterFlowTheme.of(
@@ -2919,7 +2922,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                           8.0),
                                                             ),
                                                           ),
-                                                        ].divide(const SizedBox(
+                                                        ].divide(SizedBox(
                                                             height: 16.0)),
                                                       ),
                                                     ),
@@ -2938,11 +2941,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           ),
                           Container(
                             width: double.infinity,
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               color: Colors.black,
                             ),
                             child: Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   8.0, 15.0, 8.0, 15.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -2987,7 +2990,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                             FontWeight.w500,
                                                       ),
                                             ),
-                                          ].divide(const SizedBox(width: 8.0)),
+                                          ].divide(SizedBox(width: 8.0)),
                                         ),
                                       ),
                                       Text(
@@ -3014,7 +3017,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               fontWeight: FontWeight.w500,
                                             ),
                                       ),
-                                    ].divide(const SizedBox(height: 4.0)),
+                                    ].divide(SizedBox(height: 4.0)),
                                   ),
                                 ],
                               ),
@@ -3025,14 +3028,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     ),
                   ),
                 Align(
-                  alignment: const AlignmentDirectional(1.0, 1.0),
+                  alignment: AlignmentDirectional(1.0, 1.0),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 16.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 16.0),
                     child: FlutterFlowIconButton(
                       borderRadius: 24.0,
                       buttonSize: 60.0,
-                      fillColor: const Color(0xFF25D366),
+                      fillColor: Color(0xFF25D366),
                       icon: FaIcon(
                         FontAwesomeIcons.whatsapp,
                         color: FlutterFlowTheme.of(context).info,
