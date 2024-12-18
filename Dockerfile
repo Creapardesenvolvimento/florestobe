@@ -1,16 +1,20 @@
-FROM cirrusci/flutter:stable
-# Ou, se necessário, você pode usar uma versão mais recente do Flutter:
-# FROM cirrusci/flutter:latest
+# Use a imagem oficial mais recente do Flutter
+FROM flutter/flutter:stable
 
 WORKDIR /app
 
 COPY . .
 
-RUN flutter upgrade   # Certifique-se de ter a versão mais recente do Flutter
+# Certifique-se de que o Flutter está na versão mais recente e compatível
+RUN flutter upgrade
+
+# Instale as dependências do projeto
 RUN flutter pub get
 
+# Compile o aplicativo para Web
 RUN flutter build web
 
 EXPOSE 8080
 
+# Inicie o aplicativo
 CMD ["flutter", "run", "--web-port=8080", "--web-hostname=0.0.0.0"]
