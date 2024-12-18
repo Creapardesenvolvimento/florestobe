@@ -1,5 +1,5 @@
 # Use a imagem base do Flutter
-FROM flutter/flutter:latest
+FROM flutter/flutter:3.0.0
 
 # Defina o diretório de trabalho
 WORKDIR /app
