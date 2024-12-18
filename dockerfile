@@ -1,5 +1,5 @@
 # Use a imagem base do Flutter
-FROM cirrusci/flutter:latest
+FROM flutter/flutter:latest
 
 # Defina o diretório de trabalho
 WORKDIR /app
